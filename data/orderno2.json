@@ -1,0 +1,57 @@
+{
+    "grid":{
+        "header":[
+            {
+                "id":"ProductID:ProductName",
+                "caption":"ΠροΙόν",
+                "type":"cmdbox",
+                "flexSize":true,
+                "width":"18.75em"
+            },
+            {
+                "id":"2",
+                "caption":"2",
+                "type":"spin",
+                "defaultValue":"0",
+                "width":"5em",
+                "min":0
+            },
+            {
+                "id":"Quantity",
+                "caption":"Quantity",
+                "type":"spin",
+                "defaultValue":"1",
+                "width":"5em",
+                "min":1
+            },
+            {
+                "id":"UnitPrice",
+                "caption":"Unit Price",
+                "type":"currency",
+                "width":"6em",
+                "readonly":true
+            },
+            {
+                "id":"Discount",
+                "caption":"Discount",
+                "type":"spin",
+                "defaultValue":"0",
+                "width":"6em",
+                "precision":2,
+                "min":0,
+                "max":100,
+                "numberTpl":"* %"
+            },
+            {
+                "id":"ExtendedPrice",
+                "caption":"Extended Price",
+                "type":"currency",
+                "formula":"=B?*C?*(1-D?/100)",
+                "width":"8em",
+                "readonly":true
+            }
+        ],
+        "rows":{ },
+        "name":""
+    }
+}
